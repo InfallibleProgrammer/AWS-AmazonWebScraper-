@@ -1,0 +1,14 @@
+[INFO  - 2017-12-05T00:31:34.373Z] GhostDriver - Main - running on port 36761
+[INFO  - 2017-12-05T00:31:35.322Z] Session [a645ba70-d953-11e7-b20a-a578f4840309] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-12-05T00:31:35.322Z] Session [a645ba70-d953-11e7-b20a-a578f4840309] - page.customHeaders:  - {}
+[INFO  - 2017-12-05T00:31:35.322Z] Session [a645ba70-d953-11e7-b20a-a578f4840309] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-12-05T00:31:35.322Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a645ba70-d953-11e7-b20a-a578f4840309
+[ERROR - 2017-12-05T00:31:38.558Z] Session [a645ba70-d953-11e7-b20a-a578f4840309] - page.onError - msg: ReferenceError: Can't find variable: uet
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-12-05T00:31:38.558Z] Session [a645ba70-d953-11e7-b20a-a578f4840309] - page.onError - stack:
+  onload (https://www.amazon.com/iPhone/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3AiPhone:1228)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2017-12-05T00:36:34.580Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-12-05T00:36:34.581Z] SessionManagerReqHand - _cleanupWindowlessSessions - Deleted Session 'a645ba70-d953-11e7-b20a-a578f4840309', because windowless

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    </head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+        <body>
+            <a href ="http://127.0.0.1:5000/"><h2>Search For Another Product</h2></a>
+            <h1>Searched Products:</h1>
+            {% for product in product_list %}
+                <div class="product">
+                    <h2>{{product.name}}</h2>
+                    <h3>Sale Price: {{product.sale_price_str}}</h3>
+                    <h3>Original Price: {{product.original_price_str}}</h3>
+                    <h3>Category: {{product.category}}</h3>
+                    <h3>Availability: {{product.availability}}</h3>
+                    <a href={{product.url}}><h3>URL: {{product.url}}</h3></a>
+                </div>
+            {% endfor %}
+
+            <h1>******************************************************</h1>
+            <h1>Related Products:</h1>
+            {% for product in all_data %}
+                <div class = "related-products">
+                    <h2>{{product.name}}</h2>
+                    <h3>Sale Price: {{product.sale_price_str}}</h3>
+                    <h3>Original Price: {{product.original_price_str}}</h3>
+                    <h3>Category: {{product.category}}</h3>
+                    <h3>Availability: {{product.availability}}</h3>
+                    <a href={{product.url}}><h3>URL: {{product.url}}</h3></a>
+                </div>
+            {% endfor %} 
+    </body>
